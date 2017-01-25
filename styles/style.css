@@ -1,0 +1,50 @@
+.width-30-per{
+    width: 30%;
+}
+.pull-left {
+    float: left;
+}
+.mrg10 {
+    margin: 10px;
+}
+.labels {
+    width: 30%;
+    float: left;
+    margin: 10px;
+}
+.inputs {
+    width: 25%;
+    float: left;
+    margin: 10px;
+}
+.mrg10 {
+    margin: 10px;
+}
+.clr {
+    clear: both;
+}
+.time{
+    width: 33%;
+    float: left;
+}
+.brdr {
+    border: 1px solid black;
+}
+.tbl {
+    width: 100%;
+}
+table {
+    border: 1px solid black;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-center {
+    text-align: center;
+}
+.width-25-per {
+    width: 25%;
+}
+.width-50-per {
+    width: 50%;
+}

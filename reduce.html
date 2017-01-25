@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Performance Comparison</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	<body>
+	<!--<form name="FormData" action="">-->
+		<div class="clr">
+			<div class="labels">Number of objects to test on?</div>
+			<input type="number" id="objectCount" name="objectCount" value="200" class="inputs">
+			<button type="submit" onclick="singleTest()" class="mrg10">Test Once</button>
+		</div>
+		<div class="clr">
+			<div class="labels">Number of test run?</div>
+			<input type="number" id="testCount" name="testCount" value="5000" class="inputs">
+			<button type="submit" onclick="runAutomatedTests(testCount.value)" class="mrg10">Multiple <Tests></Tests></button>
+		</div>
+
+
+	<table class="tbl">
+		<thead>
+			<tr>
+				<th class="txt-left width-25-per">Time taken by reduce</th>
+				<th class="txt-left width-25-per">Time taken by loop</th>
+				<th class="txt-left width-50-per">Conclusion</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="txt-left"><span id="reducetime"></span> ms</td>
+				<td class="txt-left"><span id="looptime"></span> ms</td>
+				<td class="txt-left"><strong><span id="verdict"></span></strong></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<div>
+		<br>All test stats:
+		<br>Reduce:<span id="effreduce"></span>
+		<br>Loop:<span id="effloop"></span>
+		<br>Tie:<span id="tiecount"></span>
+		<hr>
+		Total Tests:<span id="totaltests"></span>
+	</div>
+	This program calculates sum of 'CH' location using <code>reduce</code> and <code>for</code> loop.
+	As we increase the number of objects, <code>reduce</code> becomes less efficient.
+	<script type="text/javascript" src="scripts/app.js"></script>
+	</body>
+</html>
